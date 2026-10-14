@@ -2,13 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
-    <title>{% block title %}Findexors – Find Trusted Businesses{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}Findexors – Find Trusted Businesses{% endblock %}</title>
     <meta name="description" content="{% block meta_description %}Find trusted local businesses near you on Findexors.{% endblock %}">
     <meta name="keywords" content="{% block meta_keywords %}business listing, local services, findexors{% endblock %}">
     <meta name="author" content="Findexors">
+    <meta name="robots" content="index, follow">
+
     <link rel="icon" href="{% static 'assets/images/favicon.png' %}">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -113,201 +118,184 @@
 <body class="bg-gray-50 text-gray-800">
 
     <div class="bg-[#071120] border-b border-white/10 text-gray-300 text-sm hidden lg:block">
-    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
 
-        <div class="flex items-center gap-6">
-        <a href="tel:+919898034466" class="hover:text-white transition">
-            <i class="fa-solid fa-phone-volume"></i> +91 9898 03 4466
-        </a>
+            <div class="flex items-center gap-6">
+            <a href="tel:+919898034466" class="hover:text-white transition">
+                <i class="fa-solid fa-phone-volume"></i> +91 9898 03 4466
+            </a>
 
-        <a href="mailto:info@cloudrohu.com" class="hover:text-white transition">
-            <i class="fa-solid fa-envelope"></i> support@googlefindexor.com
-        </a>
-        </div>
-
-        <div class="flex items-center gap-5">
-            <i class="fa-solid fa-rocket"></i>
-        <span class="text-cyan-400">
-            Grow Your Business With Digital Marketing
-        </span>
-        </div>
-
-    </div>
-    </div>
-
-    <header class="glass-nav sticky top-0 z-50">
-
-    <div class="max-w-7xl mx-auto px-5 lg:px-8">
-
-        <div class="flex items-center justify-between h-[82px]">
-
-        <!-- LOGO -->
-        <a href="#" class="flex items-center gap-3">
-
-            <div>
-                <h2 class="text-white text-xl font800 font-extrabold tracking-wide">
-                    Google Findexor
-                </h2>
-
-                <p class="text-gray-400 text-xs tracking-[3px] uppercase">
-                    Digital Agency
-                </p>
+            <a href="mailto:info@cloudrohu.com" class="hover:text-white transition">
+                <i class="fa-solid fa-envelope"></i> support@googlefindexor.com
+            </a>
             </div>
 
-        </a>
+            <div class="flex items-center gap-5">
+                <i class="fa-solid fa-rocket"></i>
+            <span class="text-cyan-400">
+                Grow Your Business With Digital Marketing
+            </span>
+            </div>
 
-        <!-- DESKTOP MENU -->
-        <nav class="hidden lg:flex items-center gap-9">
+        </div>
+    </div>
 
-            <a href="/" class="nav-link text-gray-200 hover:text-white text-[15px] font-medium">
-            Home
+    <header class="glass-nav sticky top-0 z-50 bg-white">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div class="flex items-center justify-between h-[82px]">
+
+            <!-- LOGO -->
+            <a href="#" class="flex items-center gap-3">
+
+                <div>
+                    <img src="{% static "images/logo.png" %}" alt="Google Findexor" style="width: 280px; height: 95px;">
+                </div>
+
             </a>
 
-            <a href="#" class="nav-link text-gray-200 hover:text-white text-[15px] font-medium">
-            About
-            </a>
+            <!-- DESKTOP MENU -->
+            <nav class="hidden lg:flex items-center gap-9 text-black">
 
-            <!-- DROPDOWN -->
-            <div class="relative dropdown">
+                <a href="/" class="nav-link text-[15px] font-medium">
+                Home
+                </a>
 
-            <button class="nav-link text-gray-200 hover:text-white text-[15px] font-medium flex items-center gap-2">
-                Services <i class="fa-solid fa-angle-down"></i>
-            </button>
+                <a href="#" class="nav-link text-[15px] font-medium">
+                About
+                </a>
 
-            <!-- DROPDOWN MENU -->
-            <div class="dropdown-menu absolute top-[42px] left-0 w-[280px] bg-[#111827] border border-white/10 p-4 shadow-2xl">
+                <!-- DROPDOWN -->
+                <div class="relative dropdown">
 
-                <div class="grid gap-2">
+                <button class="nav-link text-[15px] font-medium flex items-center gap-2">
+                    Services <i class="fa-solid fa-angle-down"></i>
+                </button>
 
-                    <a href="#" class="p-3 rounded-xl hover:bg-white/5 transition text-gray-300 hover:text-white flex items-center gap-2">
-                        <i class="fa-solid fa-magnifying-glass"></i> SEO Marketing
-                    </a>
+                <!-- DROPDOWN MENU -->
+                <div class="dropdown-menu absolute top-[42px] left-0 w-[280px] bg-[#111827] border border-white/10 p-4 shadow-2xl">
 
-                    <a href="#" class="p-3 rounded-xl hover:bg-white/5 transition text-gray-300 hover:text-white flex items-center gap-2">
-                        <i class="fa-solid fa-bullhorn"></i>
-                        Google Ads
-                    </a>
+                    <div class="grid gap-2">
 
-                    <a href="#" class="p-3 rounded-xl hover:bg-white/5 transition text-gray-300 hover:text-white flex items-center gap-2">
-                        <i class="fa-brands fa-facebook"></i>
-                        Social Media Marketing
-                    </a>
+                        <a href="#" class="p-3 rounded-xl hover:bg-white/5 transition text-gray-300 hover:text-white flex items-center gap-2">
+                            <i class="fa-solid fa-magnifying-glass"></i> SEO Marketing
+                        </a>
 
-                    <a href="#" class="p-3 rounded-xl hover:bg-white/5 transition text-gray-300 hover:text-white flex items-center gap-2">
-                        <i class="fa-solid fa-code"></i>
-                        Website Development
-                    </a>
+                        <a href="#" class="p-3 rounded-xl hover:bg-white/5 transition text-gray-300 hover:text-white flex items-center gap-2">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            Google Ads
+                        </a>
 
-                    <a href="#" class="p-3 rounded-xl hover:bg-white/5 transition text-gray-300 hover:text-white flex items-center gap-2">
-                        <i class="fa-solid fa-bullseye"></i>
-                        Lead Generation
-                    </a>
+                        <a href="#" class="p-3 rounded-xl hover:bg-white/5 transition text-gray-300 hover:text-white flex items-center gap-2">
+                            <i class="fa-brands fa-facebook"></i>
+                            Social Media Marketing
+                        </a>
+
+                        <a href="#" class="p-3 rounded-xl hover:bg-white/5 transition text-gray-300 hover:text-white flex items-center gap-2">
+                            <i class="fa-solid fa-code"></i>
+                            Website Development
+                        </a>
+
+                        <a href="#" class="p-3 rounded-xl hover:bg-white/5 transition text-gray-300 hover:text-white flex items-center gap-2">
+                            <i class="fa-solid fa-bullseye"></i>
+                            Lead Generation
+                        </a>
+
+                    </div>
 
                 </div>
 
-            </div>
+                </div>
+
+                <a href="#" class="nav-link text-[15px] font-medium">
+                Portfolio
+                </a>
+
+                <a href="#" class="nav-link text-[15px] font-medium">
+                Blog
+                </a>
+
+                <a href="#" class="nav-link text-[15px] font-medium">
+                Contact
+                </a>
+
+            </nav>
+
+            <!-- RIGHT SIDE -->
+            <div class="hidden lg:flex items-center gap-4">
+
+                <a href="#" class="gradient-btn px-6 py-3 text-white font-semibold text-sm">
+                Get Free Audit
+                </a>
 
             </div>
 
-            <a href="#" class="nav-link text-gray-200 hover:text-white text-[15px] font-medium">
-            Portfolio
-            </a>
+            <!-- MOBILE BUTTON -->
+            <button id="menuBtn" class="lg:hidden text-black text-3xl">
+                ☰
+            </button>
 
-            <a href="#" class="nav-link text-gray-200 hover:text-white text-[15px] font-medium">
-            Blog
-            </a>
-
-            <a href="#" class="nav-link text-gray-200 hover:text-white text-[15px] font-medium">
-            Contact
-            </a>
-
-        </nav>
-
-        <!-- RIGHT SIDE -->
-        <div class="hidden lg:flex items-center gap-4">
-
-            <a href="#" class="gradient-btn px-6 py-3 text-white font-semibold text-sm">
-            Get Free Audit
-            </a>
+            </div>
 
         </div>
-
-        <!-- MOBILE BUTTON -->
-        <button id="menuBtn" class="lg:hidden text-white text-3xl">
-            ☰
-        </button>
-
-        </div>
-
-    </div>
 
     </header>
 
     <div id="overlay" class="fixed inset-0 bg-black/60 z-[998] hidden"></div>
 
-    <div id="mobileMenu" class="mobile-menu fixed top-0 w-[85%] max-w-[340px] h-full bg-[#081120] z-[999] shadow-2xl p-6">
+    <div id="mobileMenu" class="mobile-menu fixed top-0 w-[85%] max-w-[340px] h-full bg-[#fff] z-[999] shadow-2xl p-6">
 
-    <!-- TOP -->
-    <div class="flex items-center justify-between mb-10">
+        <!-- TOP -->
+        <div class="flex items-center justify-between mb-10">
 
-        <div class="flex items-center gap-3">
+            <div class="flex items-center gap-5">
 
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-white font-bold">
-            <img src="https://avatars.githubusercontent.com/u/141917927?v=4" alt="Logo" class="rounded-xl">
+            <div>
+               <img src="{% static "images/logo.png" %}" alt="Google Findexor" class="w-auto h-17">
+            </div>
+
+            </div>
+
+            <button id="closeBtn" class="text-black text-3xl">
+            ×
+            </button>
+            
         </div>
 
-        <div>
-            <h2 class="text-white font-bold">
-            Google Findexor
-            </h2>
+        <!-- MENU -->
+        <div class="flex flex-col gap-6 text-black text-lg font-medium ">
 
-            <p class="text-xs text-gray-400">
-            Digital Agency
-            </p>
+            <a href="#">
+                Home
+            </a>
+
+            <a href="#">
+                About
+            </a>
+
+            <a href="#" >
+                Services
+            </a>
+
+            <a href="#" >
+                Portfolio
+            </a>
+
+            <a href="#">
+                Blog
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+            <!-- BUTTON -->
+            <a href="#" class="gradient-btn mt-4 text-center py-3 rounded-xl text-white font-semibold">
+                Get Free Audit
+            </a>
+
         </div>
-
-        </div>
-
-        <button id="closeBtn" class="text-white text-3xl">
-        ×
-        </button>
-
-    </div>
-
-    <!-- MENU -->
-    <div class="flex flex-col gap-3">
-
-        <a href="#" class="text-gray-200 bg-white/5 rounded-xl px-4 py-3">
-        Home
-        </a>
-
-        <a href="#" class="text-gray-200 bg-white/5 rounded-xl px-4 py-3">
-        About
-        </a>
-
-        <a href="#" class="text-gray-200 bg-white/5 rounded-xl px-4 py-3">
-        Services
-        </a>
-
-        <a href="#" class="text-gray-200 bg-white/5 rounded-xl px-4 py-3">
-        Portfolio
-        </a>
-
-        <a href="#" class="text-gray-200 bg-white/5 rounded-xl px-4 py-3">
-        Blog
-        </a>
-
-        <a href="#" class="text-gray-200 bg-white/5 rounded-xl px-4 py-3">
-        Contact
-        </a>
-
-        <!-- BUTTON -->
-        <a href="#"
-        class="gradient-btn mt-4 text-center py-3 rounded-xl text-white font-semibold">
-        Get Free Audit
-        </a>
-
-    </div>
 
     </div>
 
@@ -378,8 +366,6 @@
                 <div>
 
                     <div class="footer-logo">
-
-                        <img src="https://avatars.githubusercontent.com/u/141917927?v=4" alt="Logo" class="rounded-lg w-12 h-12">
 
                         Google Findexor
 
