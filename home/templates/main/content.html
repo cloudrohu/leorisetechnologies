@@ -1,159 +1,213 @@
 <!-- ========================= HERO START HERE =========================  -->
-<section class="relative w-full min-h-[600px] flex items-center justify-center overflow-hidden font-sans select-none">
-  
-  <div class="absolute inset-0 w-full h-full">
-    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80"  alt="Modern Office Background"  class="w-full h-full object-cover object-center"/>
-    <div class="absolute inset-0 bg-gradient-to-r from-slate-50/95 via-slate-50/85 to-slate-50/70 backdrop-blur-[2px]"></div>
-  </div>
+<section id="hero" class="relative min-h-[620px] overflow-hidden">
 
-  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 py-20">
-    <div id="full-slider" class="relative min-h-[320px] flex flex-col justify-center">
+    <div class="absolute inset-0">
 
-      <div class="slide-item transition-all duration-700 opacity-100 translate-x-0 flex flex-col items-start max-w-3xl">
-        <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold tracking-wider text-blue-700 bg-blue-100/90 border border-blue-300 uppercase mb-5 shadow-sm">
-          Digital Marketing
-        </span>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
-          Drive Growth with Targeted <span class="text-blue-600">Digital Strategies</span>
-        </h1>
-        <p class="text-lg sm:text-xl text-slate-700 mb-8 leading-relaxed font-normal">
-          Maximize your brand visibility, boost qualified traffic, and achieve peak ROI through tailored SEO, PPC, and social media campaigns.
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="#contact" class="px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-lg shadow-blue-500/25 transition-all transform hover:-translate-y-0.5">
-            Boost Your Business
-          </a>
-          <a href="#services" class="px-8 py-4 rounded-xl bg-white/90 hover:bg-white text-slate-800 font-semibold border border-slate-300 shadow-sm transition-all transform hover:-translate-y-0.5">
-            Explore Services
-          </a>
-        </div>
-      </div>
+        <img id="heroImage" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=85" class="absolute inset-0 w-full h-full object-cover transition-all duration-700" alt="Digital Agency">
 
-      <!-- Slide 2: IT & Software -->
-      <div class="slide-item hidden transition-all duration-700 opacity-0 translate-x-8 flex flex-col items-start max-w-3xl">
-        <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold tracking-wider text-indigo-700 bg-indigo-100/90 border border-indigo-300 uppercase mb-5 shadow-sm">
-          IT & Development
-        </span>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
-          Custom Web & <span class="text-indigo-600">Enterprise IT Solutions</span>
-        </h1>
-        <p class="text-lg sm:text-xl text-slate-700 mb-8 leading-relaxed font-normal">
-          We engineer high-performance web platforms, mobile applications, and scalable software solutions designed for modern enterprise needs.
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="#contact" class="px-8 py-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow-lg shadow-indigo-500/25 transition-all transform hover:-translate-y-0.5">
-            Start Your Project
-          </a>
-          <a href="#portfolio" class="px-8 py-4 rounded-xl bg-white/90 hover:bg-white text-slate-800 font-semibold border border-slate-300 shadow-sm transition-all transform hover:-translate-y-0.5">
-            View Recent Work
-          </a>
-        </div>
-      </div>
-
-      <!-- Slide 3: Cloud & Tech -->
-      <div class="slide-item hidden transition-all duration-700 opacity-0 translate-x-8 flex flex-col items-start max-w-3xl">
-        <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold tracking-wider text-teal-700 bg-teal-100/90 border border-teal-300 uppercase mb-5 shadow-sm">
-          Cloud Security
-        </span>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
-          Scalable Cloud & <span class="text-teal-600">DevOps Infrastructure</span>
-        </h1>
-        <p class="text-lg sm:text-xl text-slate-700 mb-8 leading-relaxed font-normal">
-          Accelerate your technology ecosystem with secure cloud migrations, continuous deployment pipelines, and 24/7 managed IT infrastructure.
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="#contact" class="px-8 py-4 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-semibold shadow-lg shadow-teal-500/25 transition-all transform hover:-translate-y-0.5">
-            Consult Cloud Experts
-          </a>
-          <a href="#about" class="px-8 py-4 rounded-xl bg-white/90 hover:bg-white text-slate-800 font-semibold border border-slate-300 shadow-sm transition-all transform hover:-translate-y-0.5">
-            Learn More
-          </a>
-        </div>
-      </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/65 to-white/20"></div>
 
     </div>
-  </div>
 
-  <!-- Navigation Arrows (Positioned Full-Width) -->
-  <button id="full-prev" class="absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/80 hover:bg-white text-slate-800 shadow-xl border border-slate-200 transition-all focus:outline-none hover:scale-110" aria-label="Previous">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
-  </button>
-  <button id="full-next" class="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/80 hover:bg-white text-slate-800 shadow-xl border border-slate-200 transition-all focus:outline-none hover:scale-110" aria-label="Next">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
-  </button>
+    <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 min-h-[620px] flex items-center">
 
-  <!-- Navigation Dots Indicator -->
-  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex space-x-3 bg-white/60 backdrop-blur-md px-4 py-2 rounded-full border border-slate-200 shadow-sm">
-    <button class="full-dot w-3 h-3 rounded-full bg-blue-600 transition-all" aria-label="Slide 1"></button>
-    <button class="full-dot w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all" aria-label="Slide 2"></button>
-    <button class="full-dot w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all" aria-label="Slide 3"></button>
-  </div>
+        <div id="heroContent" class="max-w-3xl transition-all duration-500">
 
-  <!-- Slider JavaScript -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const slides = document.querySelectorAll('#full-slider .slide-item');
-      const dots = document.querySelectorAll('.full-dot');
-      const prevBtn = document.getElementById('full-prev');
-      const nextBtn = document.getElementById('full-next');
-      let currentIndex = 0;
-      let timer;
+            <span id="heroBadge" class="inline-flex items-center gap-2 px-4 py-2 mb-5 rounded-full bg-white/80 border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider shadow-sm">
 
-      function goToSlide(index) {
-        slides.forEach((slide, i) => {
-          if (i === index) {
-            slide.classList.remove('hidden');
-            setTimeout(() => {
-              slide.classList.remove('opacity-0', 'translate-x-8');
-              slide.classList.add('opacity-100', 'translate-x-0');
-            }, 20);
-          } else {
-            slide.classList.add('opacity-0', 'translate-x-8');
-            slide.classList.remove('opacity-100', 'translate-x-0');
-            slide.classList.add('hidden');
-          }
-        });
+                <i class="fa-solid fa-chart-line"></i>
+                Digital Marketing
+
+            </span>
+
+
+            <h1 id="heroTitle" class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 leading-[1.05] tracking-tight">
+
+                Drive Growth with
+                <span class="block text-slate-500">
+                    Targeted Digital Strategies
+                </span>
+
+            </h1>
+
+
+            <p id="heroText" class="mt-6 max-w-2xl text-base sm:text-lg leading-8 text-slate-600">
+
+                Maximize your brand visibility, boost qualified traffic,
+                and achieve peak ROI through tailored SEO, PPC,
+                and social media campaigns.
+
+            </p>
+
+
+            <div class="flex flex-wrap gap-3 mt-8">
+
+                <a href="#contact" class="px-7 py-3.5 rounded-xl bg-slate-900 text-white font-semibold shadow-lg hover:bg-slate-800 hover:-translate-y-0.5 transition">
+
+                    Boost Your Business
+                    <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+
+                </a>
+
+                <a href="#services" class="px-7 py-3.5 rounded-xl bg-white/90 border border-slate-300 text-slate-800 font-semibold hover:bg-white hover:-translate-y-0.5 transition">
+
+                    Explore Services
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PREVIOUS -->
+    <button id="prev" class="absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/90 border border-slate-200 text-slate-700 shadow-lg hover:bg-white hover:scale-110 transition z-20">
+
+        <i class="fa-solid fa-chevron-left text-sm"></i>
+
+    </button>
+
+
+    <!-- NEXT -->
+    <button id="next" class="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/90 border border-slate-200 text-slate-700 shadow-lg hover:bg-white hover:scale-110 transition z-20">
+
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+
+    </button>
+
+
+    <!-- DOTS -->
+    <div class="absolute bottom-7 left-1/2 -translate-x-1/2 z-20 flex gap-2 px-4 py-2.5 rounded-full bg-white/80 backdrop-blur border border-slate-200 shadow-sm">
+
+        <button class="dot w-7 h-2 rounded-full bg-slate-900 transition-all"></button>
+        <button class="dot w-2 h-2 rounded-full bg-slate-300 transition-all"></button>
+        <button class="dot w-2 h-2 rounded-full bg-slate-300 transition-all"></button>
+
+    </div>
+
+</section>
+
+
+<script>
+
+    const slides = [
+        {
+            image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=85",
+            icon: "fa-chart-line",
+            badge: "Digital Marketing",
+            title: "Drive Growth with",
+            highlight: "Targeted Digital Strategies",
+            text: "Maximize your brand visibility, boost qualified traffic, and achieve peak ROI through tailored SEO, PPC, and social media campaigns."
+        },
+        {
+            image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1920&q=85",
+            icon: "fa-code",
+            badge: "IT & Development",
+            title: "Build Smarter",
+            highlight: "Web & IT Solutions",
+            text: "We build high-performance websites, web applications and scalable software solutions designed for modern businesses."
+        },
+        {
+            image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1920&q=85",
+            icon: "fa-cloud",
+            badge: "Cloud & Technology",
+            title: "Scale Your Business",
+            highlight: "With Modern Technology",
+            text: "Secure cloud infrastructure, reliable deployment solutions and modern technology designed to help your business scale confidently."
+        }
+    ];
+
+    let current = 0;
+    let timer;
+
+    const image = document.getElementById("heroImage");
+    const badge = document.getElementById("heroBadge");
+    const title = document.getElementById("heroTitle");
+    const text = document.getElementById("heroText");
+    const dots = document.querySelectorAll(".dot");
+    const content = document.getElementById("heroContent");
+
+    function showSlide(index) {
+
+        current = index;
+
+        content.classList.add("opacity-0", "translate-x-4");
+
+        setTimeout(() => {
+
+            const s = slides[index];
+
+            image.src = s.image;
+
+            badge.innerHTML = `
+                <i class="fa-solid ${s.icon}"></i>
+                ${s.badge}
+            `;
+
+            title.innerHTML = `
+                ${s.title}
+                <span class="block text-slate-500">${s.highlight}</span>
+            `;
+
+            text.textContent = s.text;
+
+            content.classList.remove("opacity-0", "translate-x-4");
+
+        }, 250);
+
 
         dots.forEach((dot, i) => {
-          if (i === index) {
-            dot.classList.remove('bg-slate-300');
-            dot.classList.add('bg-blue-600', 'w-6');
-          } else {
-            dot.classList.remove('bg-blue-600', 'w-6');
-            dot.classList.add('bg-slate-300', 'w-3');
-          }
+
+            dot.classList.toggle("bg-slate-900", i === index);
+            dot.classList.toggle("bg-slate-300", i !== index);
+
+            dot.classList.toggle("w-7", i === index);
+            dot.classList.toggle("w-2", i !== index);
+
         });
+    }
 
-        currentIndex = index;
-      }
 
-      function nextSlide() {
-        goToSlide((currentIndex + 1) % slides.length);
-      }
+    function nextSlide() {
+        showSlide((current + 1) % slides.length);
+        resetTimer();
+    }
 
-      function prevSlide() {
-        goToSlide((currentIndex - 1 + slides.length) % slides.length);
-      }
 
-      function resetTimer() {
+    function prevSlide() {
+        showSlide((current - 1 + slides.length) % slides.length);
+        resetTimer();
+    }
+
+
+    function resetTimer() {
+
         clearInterval(timer);
-        timer = setInterval(nextSlide, 6000);
-      }
 
-      nextBtn.addEventListener('click', () => { nextSlide(); resetTimer(); });
-      prevBtn.addEventListener('click', () => { prevSlide(); resetTimer(); });
+        timer = setInterval(() => {
+            showSlide((current + 1) % slides.length);
+        }, 5000);
 
-      dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-          goToSlide(index);
-          resetTimer();
-        });
-      });
+    }
 
-      resetTimer();
+
+    document.getElementById("next").onclick = nextSlide;
+    document.getElementById("prev").onclick = prevSlide;
+
+    dots.forEach((dot, i) => {
+        dot.onclick = () => {
+            showSlide(i);
+            resetTimer();
+        };
     });
-  </script>
-</section>
+
+
+    showSlide(0);
+    resetTimer();
+
+</script>
 <!-- ========================= HERO END HERE =========================  -->
 
 <!-- ========================= TRUSTED BY + STATS START HERE ========================= -->
