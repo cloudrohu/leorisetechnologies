@@ -356,3 +356,6 @@ def search_city(request):
 
     return JsonResponse(list(cities), safe=False)
 
+def about(request):
+    
+    return render(request, 'main/about.html', {"title": "About Us",})

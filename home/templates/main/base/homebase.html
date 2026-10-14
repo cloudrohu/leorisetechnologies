@@ -140,7 +140,7 @@
         </div>
     </div>
 
-    <header class="glass-nav sticky top-0 z-50 bg-white">
+    <header class="glass-nav sticky top-0 z-50 bg-white shadow-lg">
 
         <div class="max-w-7xl mx-auto px-5 lg:px-8">
 
@@ -162,7 +162,7 @@
                 Home
                 </a>
 
-                <a href="#" class="nav-link text-[15px] font-medium">
+                <a href="{% url "about" %}" class="nav-link text-[15px] font-medium">
                 About
                 </a>
 
@@ -355,45 +355,59 @@
 
     </div>
 
-    <footer class="footer">
 
-        <div class="container">
+    <footer class="bg-white border-t border-slate-200">
 
-            <div class="footer-grid">
+        <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+            <!-- FOOTER GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 py-14 lg:py-16">
 
                 <!-- COMPANY -->
-
                 <div>
 
-                    <div class="footer-logo">
+                    <a href="#" class="inline-block text-2xl font-black tracking-tight text-slate-900">
+                        Google <span class="text-slate-500">Findexor</span>
+                    </a>
 
-                        Google Findexor
-
-                    </div>
-
-                    <p class="footer-about">
-
+                    <p class="mt-5 max-w-sm text-sm leading-7 text-slate-600">
                         Helping businesses grow through SEO,
                         Google Ads, Social Media Marketing,
                         Branding and Lead Generation.
-
                     </p>
 
-                    <div class="social-icons">
+                    <!-- SOCIAL -->
+                    <div class="flex items-center gap-3 mt-6">
 
-                        <a href="#">
+                        <a href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-xl
+                                bg-slate-50 border border-slate-200 text-slate-600
+                                hover:bg-slate-900 hover:text-white hover:border-slate-900
+                                transition">
                             <i class="fab fa-facebook-f"></i>
                         </a>
 
-                        <a href="#">
+                        <a href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-xl
+                                bg-slate-50 border border-slate-200 text-slate-600
+                                hover:bg-slate-900 hover:text-white hover:border-slate-900
+                                transition">
                             <i class="fab fa-instagram"></i>
                         </a>
 
-                        <a href="#">
+                        <a href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-xl
+                                bg-slate-50 border border-slate-200 text-slate-600
+                                hover:bg-slate-900 hover:text-white hover:border-slate-900
+                                transition">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
 
-                        <a href="#">
+                        <a href="#"
+                        class="w-10 h-10 flex items-center justify-center rounded-xl
+                                bg-slate-50 border border-slate-200 text-slate-600
+                                hover:bg-slate-900 hover:text-white hover:border-slate-900
+                                transition">
                             <i class="fab fa-youtube"></i>
                         </a>
 
@@ -401,71 +415,156 @@
 
                 </div>
 
-                <!-- QUICK LINKS -->
 
+                <!-- QUICK LINKS -->
                 <div>
 
-                    <h4>Quick Links</h4>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-900">
+                        Quick Links
+                    </h4>
 
-                    <ul>
+                    <ul class="mt-5 space-y-3">
 
-                        <li><a href="#">Home</a></li>
+                        <li>
+                            <a href="#"
+                            class="text-sm text-slate-600 hover:text-slate-900 transition">
+                                Home
+                            </a>
+                        </li>
 
-                        <li><a href="#">About Us</a></li>
+                        <li>
+                            <a href="#"
+                            class="text-sm text-slate-600 hover:text-slate-900 transition">
+                                About Us
+                            </a>
+                        </li>
 
-                        <li><a href="#">Services</a></li>
+                        <li>
+                            <a href="#"
+                            class="text-sm text-slate-600 hover:text-slate-900 transition">
+                                Services
+                            </a>
+                        </li>
 
-                        <li><a href="#">Pricing</a></li>
+                        <li>
+                            <a href="#"
+                            class="text-sm text-slate-600 hover:text-slate-900 transition">
+                                Pricing
+                            </a>
+                        </li>
 
-                        <li><a href="#">Contact</a></li>
+                        <li>
+                            <a href="#"
+                            class="text-sm text-slate-600 hover:text-slate-900 transition">
+                                Contact
+                            </a>
+                        </li>
 
                     </ul>
 
                 </div>
+
 
                 <!-- SERVICES -->
-
                 <div>
 
-                    <h4>Services</h4>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-900">
+                        Services
+                    </h4>
 
-                    <ul>
+                    <ul class="mt-5 space-y-3">
 
-                        <li><a href="#">SEO Services</a></li>
+                        <li>
+                            <a href="#"
+                            class="text-sm text-slate-600 hover:text-slate-900 transition">
+                                SEO Services
+                            </a>
+                        </li>
 
-                        <li><a href="#">Google Ads</a></li>
+                        <li>
+                            <a href="#"
+                            class="text-sm text-slate-600 hover:text-slate-900 transition">
+                                Google Ads
+                            </a>
+                        </li>
 
-                        <li><a href="#">Meta Ads</a></li>
+                        <li>
+                            <a href="#"
+                            class="text-sm text-slate-600 hover:text-slate-900 transition">
+                                Meta Ads
+                            </a>
+                        </li>
 
-                        <li><a href="#">Website Development</a></li>
+                        <li>
+                            <a href="#"
+                            class="text-sm text-slate-600 hover:text-slate-900 transition">
+                                Website Development
+                            </a>
+                        </li>
 
-                        <li><a href="#">Lead Generation</a></li>
+                        <li>
+                            <a href="#"
+                            class="text-sm text-slate-600 hover:text-slate-900 transition">
+                                Lead Generation
+                            </a>
+                        </li>
 
                     </ul>
 
                 </div>
 
-                <!-- CONTACT -->
 
+                <!-- CONTACT -->
                 <div>
 
-                    <h4>Contact Info</h4>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-900">
+                        Contact Info
+                    </h4>
 
-                    <ul class="contact-list">
+                    <ul class="mt-5 space-y-4">
 
-                        <li>
-                            <i class="fa-solid fa-phone"></i>
-                            +91 9898 03 4466
+                        <li class="flex items-start gap-3">
+
+                            <span class="w-9 h-9 shrink-0 flex items-center justify-center
+                                        rounded-lg bg-slate-50 border border-slate-200
+                                        text-slate-600">
+                                <i class="fa-solid fa-phone text-sm"></i>
+                            </span>
+
+                            <span class="pt-1 text-sm text-slate-600">
+                                +91 9898 03 4466
+                            </span>
+
                         </li>
 
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            info@cloudrohu.com
+
+                        <li class="flex items-start gap-3">
+
+                            <span class="w-9 h-9 shrink-0 flex items-center justify-center
+                                        rounded-lg bg-slate-50 border border-slate-200
+                                        text-slate-600">
+                                <i class="fa-solid fa-envelope text-sm"></i>
+                            </span>
+
+                            <span class="pt-1 text-sm text-slate-600 break-all">
+                                support@googlefindexor.com
+                            </span>
+
                         </li>
 
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Mumbai, India
+
+                        <li class="flex items-start gap-3">
+
+                            <span class="w-9 h-9 shrink-0 flex items-center justify-center
+                                        rounded-lg bg-slate-50 border border-slate-200
+                                        text-slate-600">
+                                <i class="fa-solid fa-location-dot text-sm"></i>
+                            </span>
+
+                            <span class="pt-1 text-sm text-slate-600">
+                                Mumbai, India
+                            </span>
+
                         </li>
 
                     </ul>
@@ -474,19 +573,25 @@
 
             </div>
 
+
             <!-- BOTTOM -->
+            <div class="border-t border-slate-200 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
 
-            <div class="footer-bottom">
-
-                <p>
+                <p class="text-sm text-slate-500 text-center md:text-left">
                     © 2026 Google Findexor. All Rights Reserved.
                 </p>
 
-                <div>
+                <div class="flex items-center gap-5">
 
-                    <a href="#">Privacy Policy</a>
+                    <a href="#"
+                    class="text-sm text-slate-500 hover:text-slate-900 transition">
+                        Privacy Policy
+                    </a>
 
-                    <a href="#">Terms & Conditions</a>
+                    <a href="#"
+                    class="text-sm text-slate-500 hover:text-slate-900 transition">
+                        Terms & Conditions
+                    </a>
 
                 </div>
 
@@ -495,7 +600,6 @@
         </div>
 
     </footer>
-
 
     <script>
         const menuBtn = document.getElementById('menuBtn');
@@ -616,6 +720,7 @@
 
         });
     </script>
+
 
 
 </body>
